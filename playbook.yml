@@ -1,0 +1,10 @@
+---
+- name: Playbook de Post-Installation Ubuntu 
+  hosts: all
+  remote_user: yishan
+
+  roles:
+  - role: tools
+  - role: shell
+    users:
+      - username: yishan
