@@ -1,51 +1,5 @@
-- name: Post-installation d'Ubuntu
-  hosts: all
-  tasks:
-    - name: Installation des paquets de base
-      apt: name={{ item }} update_cache=yes
-      with_items:
-      - vim
-      - zsh
-      - terminator
-      - tmux
-      - tilix
-      - ccze
-      - htop
-      - docker.io
-      - docker-compose
-      - git
-      - curl
-      - tree
-      - nmap
-  
-    - name: Installation de Oh-My-ZSH
-      shell: sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-      
-    - name: Récupération de l'extension zsh autosuggestions
-      ansible.builtin.git:
-        repo: https://github.com/zsh-users/zsh-autosuggestions
-        dest: ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-        clone: yes
-        update: yes
-
-    - name: Récupération de l'extension zsh completions
-      ansible.builtin.git:
-        repo: https://github.com/zsh-users/zsh-completions
-        dest: ${ZSH_CUSTOM:=~/.oh-my-zsh/custom}/plugins/zsh-completions
-        clone: yes
-        update: yes
-
-
-    - name: Récupération de l'extension zsh syntax highlihting
-      ansible.builtin.git:
-        repo: https://github.com/zsh-users/zsh-syntax-highlighting.git
-        dest: ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
-        clone: yes
-        update: yes
-
-    - name: Récupération du theme powerlevel10K
-      ansible.builtin.git:
-        repo: https://github.com/romkatv/powerlevel10k.git
-        dest: ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
-        clone: yes
-        update: yes
+---
+ - hosts: all
+   roles:
+    - role: tools
+    - role: shell

@@ -1,0 +1,19 @@
+---
+- name: Installation des paquets / outils
+  apt: 
+    name: "{{ item }}"
+    state: present
+  loop:
+    - vim
+    - zsh
+    - terminator
+    - tmux
+    - tilix
+    - ccze
+    - htop
+    - docker.io
+    - docker-compose
+    - git
+    - curl
+    - tree
+    - nmap
