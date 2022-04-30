@@ -1,8 +1,6 @@
 ---
 - name: Playbook de Post-Installation Ubuntu 
   hosts: all
-  remote_user: yishan
-  become_user: yishan
 
   roles:
   - role: tools
