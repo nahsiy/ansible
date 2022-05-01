@@ -6,7 +6,6 @@
   loop:
     - vim
     - zsh
-    - terminator
     - tmux
     - tilix
     - ccze
@@ -18,3 +17,5 @@
     - tree
     - nmap
     - fonts-firacode
+  become: true
+  tags: apt
