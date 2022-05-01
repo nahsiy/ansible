@@ -24,7 +24,7 @@
 2. zsh-completions
 3. zsh-syntax-highlighting
 
-<h3> Configuration du fichier .zshrc : <h3>
+<h3> Configuration du fichier .zshrc : </h3>
 
 1. Modification du thème utilisé (*Powerlevel10K*)
 2. Ajout des alias
