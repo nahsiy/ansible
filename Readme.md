@@ -15,6 +15,17 @@
 11. tree
 12. nmap 
 13. tcpdump
+14. discord
+15. brave-browser
+16. code
+17. virtualbox
+18. virtualbox-dkms
+19. vlc
+20. protonvpn
+21. protonvpn-gui
+22. wireshark
+23. steam
+24. lutris
 
 <h3> Installation de la police utilisée dans le futur shell : Fonts-firacode </h3>
 

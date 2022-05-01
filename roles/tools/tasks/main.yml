@@ -18,5 +18,16 @@
     - nmap
     - tcpdump
     - fonts-firacode
+    - discord
+    - brave-browser
+    - code
+    - virtualbox
+    - virtualbox-dkms
+    - vlc
+    - protonvpn
+    - protonvpn-gui
+    - wireshark
+    - steam
+    - lutris
   become: true
   tags: apt
