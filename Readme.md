@@ -26,6 +26,7 @@
 22. wireshark
 23. steam
 24. lutris
+25. deja-dup
 
 <h3> Installation de la police utilisée dans le futur shell : Fonts-firacode </h3>
 

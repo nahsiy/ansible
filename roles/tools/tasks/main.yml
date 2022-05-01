@@ -29,5 +29,6 @@
     - wireshark
     - steam
     - lutris
+    - deja-dup
   become: true
   tags: apt
