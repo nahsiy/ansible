@@ -51,3 +51,38 @@
   - { regexp: 'ZSH_THEME="robbyrussell"', line: 'ZSH_THEME="powerlevel10k/powerlevel10k"' }
   - { regexp: 'plugins=\(git\)', line: 'plugins=(zsh-autosuggestions zsh-completions zsh-syntax-highlighting)' }
   tags: zshrc
+
+- name: "Ajout des aliases dans le fichier de configuration .zshrc"
+  lineinfile:
+    path: /home/yishan/.zshrc
+    insertafter: '# Example aliases'
+    line: "{{ item }}"
+  with_items:
+    - alias maj='sudo apt-get update && sudo apt-get upgrade && sudo apt-get dist-upgrade'
+    - alias up='sudo apt-get update'
+    - alias install='sudo apt-get install'
+    - alias autoremove='sudo apt-get autoremove'
+    - alias autoclean='sudo apt-get autoclean'
+    - alias cache='sudo apt-cache search'
+    - alias cddl="cd ~/Téléchargements"
+    - alias cl='clear'
+    - alias ll='ls -lhtra'
+    - alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
+    - alias ntar="tar -cf"
+    - alias gz="tar -zcvf"
+    - alias bz="tar -jcvf"
+    - alias zp="zip"
+    - alias ugz="tar -zxf"
+    - alias ubz="tar -jxf"
+    - alias utar="tar -xf"
+    - alias uzp="unzip"
+    - alias ltar="tar -tf"
+    - alias lbz="tar -jtf"
+    - alias lgz="tar -ztf"
+    - alias lzp="unzip -l"
+    - alias llz="tar --lzma -tf"
+    - alias ulz="tar --lzma -xf"
+    - alias lz="tar --lzma -cvf"
+    - alias syslog="tail -f /var/log/syslog | ccze -A"
+    - alias modifies="find . -mtime -1 -print | more"
+  tags: zshrc
