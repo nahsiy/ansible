@@ -1,6 +1,6 @@
 <h2> Playbook de post-installation Ubuntu 22.04 LTS</h2>
 
-Il permet d'installer des logiciels supplémentaires ou de s'assurer qu'ils soient présents:
+<h3> Installation des logiciels supplémentaires ou s'assurer qu'ils soient présents:</h3>
 
 1. vim
 2. zsh
@@ -14,9 +14,23 @@ Il permet d'installer des logiciels supplémentaires ou de s'assurer qu'ils soie
 10. curl
 11. tree
 12. nmap 
-13. tcpdump 
+13. tcpdump
 
-Il permet ensuite de mettre en place et configurer le prompt zsh avec extensions + police Nerd Font
+<h3> Installation de la police utilisée dans le futur shell : Fonts-firacode </h3>
+
+<h3> Mise en place de l'interpréteur zsh et récupération des extensions suivantes :</h3>
+
+1. zsh-autossugestions
+2. zsh-completions
+3. zsh-syntax-highlighting
+
+<h3> Configuration du fichier .zshrc : <h3>
+
+1. Modification du thème utilisé (*Powerlevel10K*)
+2. Ajout des alias
+3. Ajout des extensions
+
+
 En cours de dev', pour le moment cela donne ça :
 
 ![first step](/images/alpha.png)
