@@ -16,6 +16,7 @@
     - curl
     - tree
     - nmap
+    - tcpdump
     - fonts-firacode
   become: true
   tags: apt
